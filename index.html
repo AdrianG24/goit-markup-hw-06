@@ -237,7 +237,7 @@
                             </li>
                         </ul>
                     </div>      
-              </li>
+            </li>
             </ul>
             </div>
         </section>
@@ -329,15 +329,59 @@
                 </li>
             </ul>
             </div>
-
+            <div class="footer-connect">
+                <h2 class="spam">Подпишитесь на рассылку</h2>
+                <div class="footer-form">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <div class="button-full">
+                    <button class="footer-button">Подписаться
+                        <svg class="button-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
         </div>
         </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close" data-modal-close><svg class="close-x" width="11" height="11">
-                <use href="./images/icons.svg#icon-Vector"></use>
-            </svg></button>
+            <button class="close" data-modal-close>
+                <svg class="close-x" width="11" height="11">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <div class="section-form">
+                <h1 class="header-modal">Оставьте свои данные, мы вам перезвоним</h1>
+                <form class="form js-speaker-form">
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name">
+                        <svg class="member-soc-icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Почта</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">Соглашаюсь с рассылкой и принимаю <a href="" class="contract">Условия договора</a></label>
+                    </div>
+                    <button type="submit" class="send-button">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
